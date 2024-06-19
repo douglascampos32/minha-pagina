@@ -8,6 +8,7 @@
     <!--FIM BOOTSTRAP-ICONS-->
     <title>Apresentação</title>
     <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,6 +21,7 @@
         <nav class="menu-desktop">
             <ul>
                 <li><a href="a">Inicio</a></li>
+                <li><a href="a">Especialidades</a></li>
                 <li><a href="a">Sobre</a></li>
                 <li><a href="a">Projetos</a></li>
             </ul>
@@ -28,8 +30,27 @@
             <a href="#">
                 <button>contato</button>
             </a>
-
         </div><!--btn-contato-->
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x-lg"></i>
+            </div>
+            <nav >
+                <ul>
+                    <li><a href="a">Inicio</a></li>
+                    <li><a href="a">Especialidades</a></li>
+                    <li><a href="a">Sobre</a></li>
+                    <li><a href="a">Projetos</a></li>
+                    <li><a href="#">Contato</a> </li>
+                </ul>
+            </nav>
+        </div><!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu">
+
+        </div>
         </div><!---interface-->  
     </header>
     <main>
@@ -38,7 +59,7 @@
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1>
-                            DIGITALIZANDO IDEIAS<span>.</span> </h1>
+                            DIGITALIZANDO IDEIAS </h1>
                             <P>Criatividade e inovação andam lado a lado. Com uma combinação
                                 única de design impactante, funcionalidades intuitiva e otimização
                                 de resultados, estou pronto para criar a presença online dos seus sonhos. </P>
@@ -49,7 +70,7 @@
                         </div>
                     </div><!--txt topo do site-->
                     <div class="img-topo-site">
-                        <img src="img/programador4.png">
+                        <img src="img/douglas2.png">
                     </div><!--img topo do site-->
                 </div><!--flex-->
             </div><!--interface-->
@@ -88,7 +109,7 @@
             <div class="interface">
                 <div class="flex">
                     <div class="img-txt-sobre">
-                        <img src="img/perfil.png" alt="">
+                        <img src="img/douglas.png" alt="">
                     </div><!--img sobre-->
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER,<span>SOU DOUGLAS CAMPOS.</span> </h2>
@@ -119,7 +140,7 @@
         </section><!--portfolio-->
         <section class="formulario">
             <div class="interface">
-                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <h2 class="titulo">FALE <span>COMIGO</span></h2>
                 <form action="">
                     <input type="text" name="" id=" " placeholder="Seu Nome Completo:" required>
                     <input type="text" name="" id=" " placeholder="Seu e-mail:" required>
