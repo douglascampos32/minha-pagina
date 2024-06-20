@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="interface">
+        <div class="interface" id="topo">
         <div class="logo">
             <a href="a">
                 <img src="img/logotest1.png" alt="logo demonstrativo">
@@ -20,14 +20,14 @@
         </div><!--logo-->
         <nav class="menu-desktop">
             <ul>
-                <li><a href="a">Inicio</a></li>
-                <li><a href="a">Especialidades</a></li>
-                <li><a href="a">Sobre</a></li>
-                <li><a href="a">Projetos</a></li>
+                <li><a href="#topo">Inicio</a></li>
+                <li><a href="#esp">Especialidades</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#pj">Projetos</a></li>
             </ul>
         </nav>
         <div class="btn-contato">
-            <a href="#">
+            <a href="#call">
                 <button>contato</button>
             </a>
         </div><!--btn-contato-->
@@ -40,10 +40,10 @@
             </div>
             <nav >
                 <ul>
-                    <li><a href="a">Inicio</a></li>
-                    <li><a href="a">Especialidades</a></li>
-                    <li><a href="a">Sobre</a></li>
-                    <li><a href="a">Projetos</a></li>
+                    <li><a href="#topo">Inicio</a></li>
+                    <li><a href="#esp">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#pj">Projetos</a></li>
                     <li><a href="#">Contato</a> </li>
                 </ul>
             </nav>
@@ -54,17 +54,17 @@
         </div><!---interface-->  
     </header>
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" >
             <div class="interface">
                 <div class="flex">
-                    <div class="txt-topo-site">
+                    <div class="txt-topo-site" >
                         <h1>
                             DIGITALIZANDO IDEIAS </h1>
                             <P>Criatividade e inovação andam lado a lado. Com uma combinação
                                 única de design impactante, funcionalidades intuitiva e otimização
                                 de resultados, estou pronto para criar a presença online dos seus sonhos. </P>
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#call">
                                 <button> Entre em contato</button>
                             </a>
                         </div>
@@ -75,7 +75,7 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--topo do site-->
-        <section class="especialidades">
+        <section class="especialidades" id="esp">
             <div class="interface">
                 <h2 class="titulo"> MINHAS <span>ESPECIALIDADES</span>.</h2>
                 <div class="flex">
@@ -105,7 +105,7 @@
             </div><!--flex-->
             </div><!--interface-->
         </section><!--especialidades-->
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-txt-sobre">
@@ -128,7 +128,7 @@
                 </div>
             </div><!--innterface-->
         </section><!--sobre-->
-        <section class="portfolio">
+        <section class="portfolio" id="pj">
             <div class="intrface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -139,13 +139,13 @@
             </div><!--interface-->
         </section><!--portfolio-->
         <section class="formulario">
-            <div class="interface">
+            <div class="interface" id="call">
                 <h2 class="titulo">FALE <span>COMIGO</span></h2>
-                <form action="">
-                    <input type="text" name="" id=" " placeholder="Seu Nome Completo:" required>
-                    <input type="text" name="" id=" " placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id=" " placeholder="Celular">
-                    <textarea name="" id="" placeholder="sua mensagem" required></textarea>
+                <form method="post" action="envia.php">
+                    <input type="text" name="nome" id="nome" placeholder="Seu Nome Completo:" required>
+                    <input type="text" name="email" id="email" placeholder="Seu e-mail:" required>
+                    <input type="text" name="celular" id="celular" placeholder="Celular">
+                    <textarea name="msg" id="msg" placeholder="sua mensagem" required></textarea>
                     <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
                     
                 </form>
@@ -161,7 +161,7 @@
                         <img src="img/logotest1.png" alt="logotipo da minha pagina">
                     </div><!--logofooter-->
                     <div class="btn-social">
-                        <a href="a"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://www.instagram.com/douglas2301/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
                         <a href="https://www.youtube.com/channel/UCQSEyFYz8iO3PyVpKrV0O_g"target="_blank"><button><i class="bi bi-youtube"></i></button></a>
                         <a href="https://www.linkedin.com/in/douglas-campos-198902287/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
                     </div><!--btn-social-->
