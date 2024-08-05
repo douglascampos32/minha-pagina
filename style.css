@@ -446,7 +446,9 @@ footer .line-footer p a {
     }
 
     .topo-do-site .img-topo-site img {
-        width: 100%;
+            width: 100%;
+            animation: flutuar 2s ease-in-out infinite alternate; 
+        
     }
 
     /*especialidades*/
